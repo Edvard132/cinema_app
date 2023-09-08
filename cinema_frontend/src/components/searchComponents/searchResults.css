@@ -1,0 +1,24 @@
+.results-list{
+    position: fixed;
+    width: 40%;
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    max-height: 300px;
+    /* overflow-y: scroll; */
+}
+
+@media screen and (max-width: 990px) {
+    .results-list {
+        top: 277px;
+    }
+}
+
+.result-item:hover{
+    background-color: #efefef;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

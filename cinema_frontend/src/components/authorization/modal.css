@@ -1,0 +1,55 @@
+
+.modal_window {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal_window.active {
+   opacity: 1;
+   z-index: 1000;
+   pointer-events: all;
+}
+  
+.modal_contents {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  color: black;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  margin-bottom: 7rem;
+  width: 40vw;
+}
+
+.modal_contents.active {
+  transform: scale(1);
+}
+
+.close-btn {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-grey-5);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  background-color: white; /* Change this to the desired background color */
+  border-color: #ced4da; /* Reset border color if necessary */
+  box-shadow: none; /* Reset box-shadow if necessary */
+  /* Add any other necessary styles for the focused state */
+}
+  
